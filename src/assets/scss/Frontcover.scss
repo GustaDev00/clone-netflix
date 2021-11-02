@@ -1,0 +1,57 @@
+div.front-cover {
+    div.name-filme{
+        position: absolute;
+        bottom: 300px;
+        left: 150px;
+
+        article{
+            font-family: $roboto;
+            font-weight: 600;
+            width: 60%;
+
+            h2{
+                font-size: 4em;
+            }
+            p{
+                font-size: 1.2em;
+                margin: 20px 0;
+            }
+        }
+
+        div.btns-control{
+            display: flex;
+            align-items: center;
+
+            button{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 15px 35px;
+                margin: 0 5px;
+                font-size: 1.6rem;
+                border: none;
+                border-radius: 5px;
+                
+                &.play{
+                    border: 1px solid #000;
+                    color: #000;
+                    background-color: #fff;
+                }
+
+                &.more-information{
+                    background-color: rgba(109,109,110,0.7);
+                    color: #fff;
+                }
+                svg{
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    div#img-filme {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #141414;
+    color: white;
+}
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400;700&display=swap');
+
+// Variables
+@import 'variables';
+
+@import 'header';
+
+@import 'Frontcover';
+
+@import 'filmes';

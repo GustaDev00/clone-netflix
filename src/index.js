@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import Db from './components/Db';
+import Home from './pages/Home/index'
+import './assets/scss/index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <Db />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

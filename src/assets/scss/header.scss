@@ -1,0 +1,85 @@
+header {
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    transition: .3s ease;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px 50px;
+        padding: 14.5px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li {
+                margin: 0 5px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: $raleway;
+                }
+            }
+        }
+
+        ul.main-menu {
+            margin-left: 20px;
+        }
+
+        ul.second-menu {
+            position: absolute;
+            right: 50px;
+
+            div.search-bar {
+                display: flex;
+
+                svg {
+                    position: relative;
+                    padding: 5px;
+                    background: #000;
+                    border: 1px solid #fff;
+                    border-right: none;
+                }
+
+                input {
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    background: rgba(0, 0, 0, .75);
+                    border: solid 1px rgba(255, 255, 255, .85);
+                    border-left: none;
+                    color: #fff;
+                }
+
+                input[type="text"]:focus-visible {
+                    height: 22px;
+                    margin-top: 2px;
+                    margin-left: -2px;
+                    border: none !important;
+                }
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+header.scroll-down {
+    background-color: $cor_header;
+}
+
+body {
+    height: 1000px;
+}

@@ -1,0 +1,58 @@
+div.row-filmes{
+    position: relative;
+    bottom: 300px;
+    margin: 40px 0vw;
+    margin-left: 5vw;
+    font-family: $roboto;
+
+    h2{
+        margin: 15px 0;
+    }
+
+    div.carousel-file{
+        display: flex;
+        overflow-x: hidden;
+        width: 94.1vw;
+
+        .hover-active{
+            position: absolute;
+            background: $background;
+            z-index: 99;
+
+            img{
+                width: calc(85vw/4);
+            }
+
+            .more-info{
+                width: 100%;
+                width: calc(85vw/4);
+                .btns-filme{
+                    display: flex;
+                    justify-content: space-between;
+
+                    svg{
+                        border: 1px solid white;
+                        border-radius: 100%;
+                        padding: 5px;
+                        font-size: 20px;
+                        margin: 0 5px;
+                    }
+                }
+                .btns-control-filme{
+                    svg:first-child{
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        button{
+            border: none;
+            background: none;
+        }
+        img{
+            width: calc(90vw/6);
+        }
+    }
+
+}
